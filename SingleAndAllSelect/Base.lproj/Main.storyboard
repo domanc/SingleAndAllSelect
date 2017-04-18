@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ykD-WI-3eo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QC3-bS-8p6">
+            <objects>
+                <navigationController id="ykD-WI-3eo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EU6-Vy-ztc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4BL-rO-Pdd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vc1-Wh-Ulv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561" y="139"/>
+        </scene>
+        <!--单选和全选-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9v-AA-U9a">
+                                <rect key="frame" x="0.0" y="94" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XhB-Sh-x1o"/>
+                                </constraints>
+                                <state key="normal" title="无分类单选和全选"/>
+                                <connections>
+                                    <action selector="noCategroy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Zf-Hv-AzE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-PT-mv0">
+                                <rect key="frame" x="0.0" y="144" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K00-HY-1Dq"/>
+                                </constraints>
+                                <state key="normal" title="有分类单选和全选"/>
+                                <connections>
+                                    <action selector="haveCategroy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF8-GQ-Q53"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U9v-AA-U9a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="5LH-Nz-1kC"/>
+                            <constraint firstItem="uyF-PT-mv0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Eqk-KP-4ep"/>
+                            <constraint firstAttribute="trailing" secondItem="uyF-PT-mv0" secondAttribute="trailing" id="RKy-6c-IXl"/>
+                            <constraint firstItem="uyF-PT-mv0" firstAttribute="top" secondItem="U9v-AA-U9a" secondAttribute="bottom" constant="20" id="Xmx-F9-8LC"/>
+                            <constraint firstItem="U9v-AA-U9a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mo8-ZT-lqm"/>
+                            <constraint firstAttribute="trailing" secondItem="U9v-AA-U9a" secondAttribute="trailing" id="nbf-Zb-YbN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="单选和全选" id="Sin-F6-gZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
